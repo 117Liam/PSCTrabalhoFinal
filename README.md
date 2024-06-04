@@ -14,3 +14,11 @@ Ao final, todas as informações sobre as doações devem ser armazenadas em um 
 
 
 # Requisitos Funcionais
+
+Usamos a ajuda de uma IA generativa para criar sugestões de requisitos funcionais para o nosso problema proposto. 
+
+
+# Diagrama de Classes
+
+
+
