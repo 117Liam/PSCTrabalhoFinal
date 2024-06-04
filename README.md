@@ -15,7 +15,29 @@ Ao final, todas as informações sobre as doações devem ser armazenadas em um 
 
 # Requisitos Funcionais
 
-Usamos a ajuda de uma IA generativa para criar sugestões de requisitos funcionais para o nosso problema proposto. 
+Usamos a ajuda de uma IA generativa para criar sugestões de requisitos funcionais para o nosso problema proposto. A IA forneceu os seguintes resultados:
+
+Vamos dividir o problema em requisitos funcionais:
+
+1. **Receber detalhes das doações:**
+   - O sistema deve permitir que os doadores insiram detalhes sobre as doações, incluindo tipo (roupas, dinheiro, alimentos, etc.), quantidade e data da doação.
+   - Deve haver uma interface de terminal para facilitar a entrada dessas informações.
+   
+2. **Calcular o total das doações:**
+   - O sistema deve ser capaz de calcular o total de todas as doações recebidas.
+   - Deve haver uma função que some todas as doações inseridas.
+
+3. **Apresentar o total das doações:**
+   - Após o cálculo do total, o sistema deve apresentar esse valor de forma clara e compreensível em uma interface de usuário simples.
+
+4. **Armazenar informações das doações:**
+   - Todas as informações sobre as doações (tipo, quantidade, data) devem ser armazenadas.
+   - Esses dados devem ser armazenados em um arquivo de texto para posterior análise e recuperação.
+
+A nossa primeira crítica a IA 
+
+
+
 
 
 # Diagrama de Classes
