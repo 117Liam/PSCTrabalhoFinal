@@ -34,7 +34,7 @@ Vamos dividir o problema em requisitos funcionais:
    - Todas as informações sobre as doações (tipo, quantidade, data) devem ser armazenadas.
    - Esses dados devem ser armazenados em um arquivo de texto para posterior análise e recuperação.
 
-A nossa primeira crítica a IA 
+Acreditamos que a IA tem errado no ponto principal, que talvez deixa passar esquecido, porém é extremamente importante e tem que se tomar bastante cuidado. Ela se esqueceu de demonstrar os dados da pessoa no qual foi responsável pela doação, apesar de não parecer tão problemático muitos criminosos golpistas e pessoas que podem pagar com cheque sem fundo ou com dinheiro duvidoso podem aproveitar essa situação, não se preocupou em dizer isso tendo em vista que a IA especificou bastante em várias áreas, mas não nessa. Melhorar deveria mostrar em específico em relações a doações ou apagamentos dados das pessoas nos quais tem como objetivo pagar ou doar.
 
 
 
