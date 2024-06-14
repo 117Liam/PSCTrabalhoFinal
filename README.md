@@ -1,6 +1,5 @@
 # PSCTrabalhoFinal
 
-
 # Sistema de Gerenciamento de Doações
 
 O nosso problema consiste na criação de um sistema de gerenciamento de doações, projetado para ajudar as vítimas das enchentes no Rio Grande do Sul. O sistema consistirá em executar funções como receber doações, calcular o total de doações e armazenar as informações das doações. 
@@ -10,8 +9,6 @@ A primeira parte do sistema deve consistir num terminal para que os doadores pos
 Em seguida, com todas as doações informadas, o sistema deve calcular o total. Com isso, deve existir uma função que some todas essas doações e apresente o total em uma interface simples e de fácil compreendimento. 
 
 Ao final, todas as informações sobre as doações devem ser armazenadas em um arquivo de texto, para que todos esses dados sejam recuperados e analisados em outro momento.
-
-
 
 # Requisitos Funcionais
 
@@ -37,10 +34,57 @@ Vamos dividir o problema em requisitos funcionais:
 Acreditamos que a IA tem errado no ponto principal, que talvez deixa passar esquecido, porém é extremamente importante e tem que se tomar bastante cuidado. Ela se esqueceu de demonstrar os dados da pessoa no qual foi responsável pela doação, apesar de não parecer tão problemático muitos criminosos golpistas e pessoas que podem pagar com cheque sem fundo ou com dinheiro duvidoso podem aproveitar essa situação, não se preocupou em dizer isso tendo em vista que a IA especificou bastante em várias áreas, mas não nessa. Melhorar deveria mostrar em específico em relações a doações ou apagamentos dados das pessoas nos quais tem como objetivo pagar ou doar.
 
 
-
-
-
 # Diagrama de Classes
 
+Classe: Main
+- Métodos:
+  - main(String[] args)
 
+Classe: SistemaDoacoes
+- Atributos:
+  - gerenciador: GerenciadorDoacoes
+  - scanner: Scanner
+- Métodos:
+  - SistemaDoacoes()
+  - menuPrincipal()
+  - receberDoacao() throws ExcecaoDoacao
+  - exibirTotalDoacoes()
+  - carregarDoacoes() throws ExcecaoDoacao
+  - salvarDoacoes() throws ExcecaoDoacao
 
+Classe: GerenciadorDoacoes
+- Atributos:
+  - doacoes: List<Doacao>
+- Métodos:
+  - GerenciadorDoacoes()
+  - adicionarDoacao(Doacao doacao)
+  - calcularTotalDoacoes(): Map<String, Map<String, Double>>
+  - getDoacoes(): List<Doacao>
+  - carregarDoacoes(String caminhoArquivo) throws ExcecaoDoacao
+  - salvarDoacoes(String caminhoArquivo) throws ExcecaoDoacao
+
+Classe: Doacao
+- Atributos:
+  - tipo: String
+  - quantidade: double
+  - data: LocalDate
+  - unidade: String
+- Métodos:
+  - Doacao(String tipo, double quantidade, LocalDate data, String unidade)
+  - getTipo(): String
+  - setTipo(String tipo)
+  - getQuantidade(): double
+  - setQuantidade(double quantidade)
+  - getData(): LocalDate
+  - setData(LocalDate data)
+  - getUnidade(): String
+  - setUnidade(String unidade)
+
+Classe: ArquivoDoacoes
+- Métodos:
+  - escreverDoacoes(String caminhoArquivo, List<Doacao> doacoes) throws IOException
+  - lerDoacoes(String caminhoArquivo): List<Doacao> throws IOException
+
+Classe: ExcecaoDoacao extends Exception
+- Métodos:
+  - ExcecaoDoacao(String mensagem)
